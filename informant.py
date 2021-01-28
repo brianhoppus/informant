@@ -1,9 +1,9 @@
-from twilio.rest import TwilioRestClient
+from twilio.rest import Client
 import dev_account
 import socket
 
 # Use your Account Sid and Auth Token from twilio.com/user/account
-client = TwilioRestClient(dev_account.account_sid, dev_account.auth_token)
+client = Client(dev_account.account_sid, dev_account.auth_token)
 hostname = socket.gethostname()
 message_string = "Successful login on {}".format(hostname)
 
