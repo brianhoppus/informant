@@ -17,7 +17,7 @@ sends a text message for every successful login to my servers
     pip3 install virtualenv
     virtualenv venv
     source venv/bin/activate
-    pip install twilio
+    pip install -r requirements.txt
     
 ## step 4: create a text file dev_account.py
     account_sid = "your_account_sid_here"
